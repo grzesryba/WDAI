@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel='stylesheet' href="layoutK.css">
+    <script src='script.js' defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+
+<div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<nav id="navMenu">
+    <a id="a1" href="home.html">Strona Główna</a>
+    <a id="a2" href="galeria.html">Galeria</a>
+    <a id="a3" href="kontakt.html">Kontakt</a>
+</nav>
+<div class="container">
+    <h1>Kontakt</h1>
+<!--    <form action="submit_form.php" method="post" onsubmit="return validateForm(event)">-->
+    <form method="post" onsubmit="return validateForm(event)">
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email" placeholder="Podaj swój adres e-mail" required>
+
+        <label for="temat">Temat wiadomości:</label>
+        <select id="temat" name="temat" required>
+            <option value="" disabled selected>Wybierz temat</option>
+            <option value="pytanie">Pytanie</option>
+            <option value="opinie">Opinie</option>
+            <option value="inny">Inny</option>
+        </select>
+
+        <label for="wiadomosc">Wiadomość:</label>
+        <textarea id="wiadomosc" name="wiadomosc" rows="5" placeholder="Napisz swoją wiadomość" required></textarea>
+
+        <input type="submit" value="Wyślij">
+    </form>
+</div>
+<footer class="layer">
+    <h1>Grzegorz Rybiński</h1>
+</footer>
+</body>
+</html>
