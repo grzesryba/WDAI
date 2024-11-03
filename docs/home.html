@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strona tytułowa</title>
+    <link rel='stylesheet' href="layout.css">
+    <script src='script.js' defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="parallax">
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav id="navMenu">
+        <a id="a1" href="home.html">Strona Główna</a>
+        <a id="a2" href="galeria.html">Galeria</a>
+        <a id="a3" href="kontakt.html">Kontakt</a>
+    </nav>
+    <div id="d1" class="layer background">
+        <img src="rafa1.jpeg" class="responsive_image" id="i1">
+        <img src="roger1.jpg" class="responsive_image" id="i2">
+        <img src="djoko1.avif" class="responsive_image" id="i3">
+    </div>
+    <div class="layer bg">
+        <h1 id="T">Grand Slam Champions 2003-2024</h1>
+    </div>
+    <section id="d2" class="layer foreground">
+        <p id="p1">W ciągu ostatnich dwóch dekad tenis męski obfitował w niezapomniane momenty. Roger Federer, Rafael
+            Nadal i Novak Djokovic stworzyli erę dominacji, zdobywając łącznie 66 z 87 rozegranych w tym czasie
+            turniejów wielkoszlemowych przesuwając kolejne granice i bijąc kolejne rekordy.</p>
+    </section>
+
+    <div class="layer new-layer">
+        <canvas id="myChart"></canvas>
+    </div>
+    <div class="footer_home_div">
+        <footer class="layer">
+            <h1>Grzegorz Rybiński</h1>
+        </footer>
+    </div>
+</div>
+
+</body>
+</html>
