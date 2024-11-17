@@ -1,0 +1,34 @@
+body{
+    background-color: #101010;
+}
+.zegar {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35vh;
+}
+
+#minutnik {
+    font-size: 120px;
+    color: #218f21;
+}
+
+.ustawienie {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+button{
+    width: 200px;
+    height: 70px;
+    font-size: 40px;
+    background-color: #9da696;
+}
+
+button:hover {
+    scale: 1.0;
+    font-size: 45px;
+    background-color: #6c736b;
+}

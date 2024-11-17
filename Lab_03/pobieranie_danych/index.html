@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyświetlanie produktów z API</title>
+    <link rel="stylesheet" href="layout.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="controls">
+    <label for="filter-input">Szukaj</label>
+    <input type="text" id="filter-input" placeholder="Szukaj..."/>
+    <select id="sort-select">
+        <option value="default">Oryginalna kolejność</option>
+        <option value="asc">Rosnąco (tytuł)</option>
+        <option value="desc">Malejąco (tytuł)</option>
+    </select>
+</div>
+
+<div id="table">
+    <!--     Wiersze będą wypełniane dynamicznie za pomocą JavaScript -->
+</div>
+
+
+</body>
+</html>

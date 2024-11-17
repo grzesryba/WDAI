@@ -1,0 +1,60 @@
+body{
+    background-color: #9da696;
+}
+
+.ustawienia {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25vh;
+}
+
+input {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+input[type="text"] {
+    background-color: #e3e3e3;
+    border: 2px solid #6f7164;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+input[type="text"]:focus {
+    background-color: #d0d0d0;
+    outline: none;
+    border-color: #4a4a4a;
+}
+
+#generate_pass {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    font-size: 33px;
+    margin: 20px;
+}
+
+.checkboxes {
+    margin-left: 20px;
+}
+
+.checkboxes input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    accent-color: #6f7164;
+    background-color: #004700;
+}
+
+button{
+    margin: 50px;
+    font-size: 40px;
+    width: 400px;
+    height: 70px;
+    background-color: #6f7164;
+    border-color: #6f7164;
+}

@@ -69,36 +69,29 @@ function toggleMenu() {
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 function validateForm(event) {
-    // Pobieranie wartości z formularza
     const email = document.getElementById("email").value;
     const temat = document.getElementById("temat").value;
     const wiadomosc = document.getElementById("wiadomosc").value;
 
-    // Wyrażenie regularne do walidacji e-maila
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-    // Sprawdzenie poprawności e-maila
     if (!emailPattern.test(email)) {
         alert("Wprowadź poprawny adres e-mail.");
-        event.preventDefault(); // Zatrzymanie wysłania formularza
         return false;
     }
 
-    // Sprawdzenie, czy temat został wybrany
     if (temat === "") {
         alert("Wybierz temat wiadomości.");
         event.preventDefault();
         return false;
     }
 
-    // Sprawdzenie minimalnej długości wiadomości
     if (wiadomosc.length < 10) {
         alert("Wiadomość musi zawierać co najmniej 10 znaków.");
         event.preventDefault();
         return false;
     }
 
-    // Formularz zostanie wysłany tylko, jeśli wszystkie warunki są spełnione
     alert("Formularz przesłany pomyślnie!");
     return true;
 }

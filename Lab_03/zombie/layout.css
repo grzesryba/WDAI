@@ -1,0 +1,47 @@
+* {
+    cursor: url("aim.png") 64 64, auto;
+
+}
+
+body {
+    background-image: url("board-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+.zombie {
+    position: absolute;
+}
+
+#options {
+    width: 100vw;
+    display: flex;
+}
+
+#hearts img {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+}
+
+#points {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 110px;
+    color: white;
+}
+
+.endScreen {
+    color: red;
+    text-align: center;
+    font-size: 130px;
+    cursor: auto;
+}
+
+h1 {
+    margin-top: calc(50vh - 160px);
+}
