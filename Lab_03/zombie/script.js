@@ -96,6 +96,8 @@ function createZombie(scale,y_margin, tempo) {
     }
 }
 function endScreen(){
+    let audio = new Audio('sad-music.mp3')
+    audio.play()
     let body = document.querySelector("body")
     heart_div.remove()
     point_div.remove()
