@@ -16,13 +16,26 @@ let points = 100
 let point_div = document.getElementById("points")
 point_div.textContent = points
 
-
 document.addEventListener("click", f, false)
 let n = 0
 zombieWidth = 200
 zombieHeight = 312
 let zombies = []
 let hearts = 3
+
+
+function startSettings(){
+    heart_div.appendChild(full1)
+    heart_div.appendChild(full2)
+    heart_div.appendChild(full3)
+    h = [full1, full2, full3]
+    points = 100
+    point_div.textContent = points
+    zombies = []
+    hearts = 3
+    n = 0
+}
+
 
 function drawZombie(img, canvas, ctx, frame, scale) {
     ctx.clearRect(0, 0, canvas.width * scale*2, canvas.height * scale*2);
@@ -91,12 +104,24 @@ function endScreen(){
     body.style.cursor = "auto"
     let h1 = document.createElement("h1")
     let h2 = document.createElement("h2")
+    let button_div = document.createElement("div")
+    let button = document.createElement("button")
     h1.textContent = "THE END"
     h2.textContent = "YOUR SCORE: " + points
+    button.textContent = "PLAY AGAIN"
     h1.className = "endScreen"
     h2.className = "endScreen"
+    button.className = "endScreen"
+    button_div.id = "button_div"
     body.appendChild(h1)
     body.appendChild(h2)
+    button_div.appendChild(button)
+    body.appendChild(button_div)
+
+    button.addEventListener("click", () => {
+        body.innerHTML = ""
+        document.location.reload()
+    })
 
 }
 

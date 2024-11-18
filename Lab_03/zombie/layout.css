@@ -9,7 +9,6 @@ body {
     background-attachment: fixed;
     background-size: cover;
     overflow: hidden;
-
 }
 
 .zombie {
@@ -43,5 +42,15 @@ body {
 }
 
 h1 {
-    margin-top: calc(50vh - 160px);
+    margin-top: calc(30vh - 160px);
+}
+
+#button_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    color: #303030;
+    background-color: #68000e;
 }
